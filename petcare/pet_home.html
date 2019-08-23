@@ -1,0 +1,116 @@
+<html>
+<head>
+<style>
+body { 
+background-repeat:no-repeat;
+ background-size: 100%;
+
+}
+th {
+	display: table-cell;
+	font-weight:bold;
+	text-align:center;
+	color:white;
+   }
+td {
+	display: table-cell;
+	font-weight:bold;
+	
+	text-align:right;
+	color:black;
+   }
+input[type=text], select {
+    width: 100%;
+    padding: 3px 5px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+input[type=text]:focus {
+    border: 1px solid #555;
+}
+input[type=submit] {
+    width: 80%;
+    background-color: gray;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+	}
+
+input[type=submit]:hover{
+background-color: grey;
+    border: none;
+    color: black;
+	}
+	
+input[type=button] {
+    width: 30%;
+	position:right;
+	font-weight:bold;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border: none;
+	border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+	}
+	
+	input[type=button]:hover{
+background-color: black;
+    border: none;
+    color: gray;
+	}
+	
+div {
+    height: 600px;
+    width: 350px;
+	position:absolute;
+    top: 80px;
+    right: 600px;
+	border-radius: 10px;
+	font-weight:bold;
+	font-size:20;
+    <!--background-color: #1234;-->
+    padding: 20px;
+}
+.bg{
+	background:url("images/c6.png")center center no-repeat;
+	background-size:cover;
+}
+</style>
+</head>
+<body class="bg">
+</body>
+<body>
+<div class="navbar">
+  
+<input type="button" color="black" style="width:350px;height:35px;font:bold 25px Times New Roman;" value="HOME" onclick="fun1()"/></br>
+<script> function fun1() { window.location="admin_home.html"; } </script></br>
+
+  
+<input type="button" color="black" style="width:350px;height:35px;font:bold 25px Times New Roman;" value="ADD PET" onclick="fun2()"/></br>
+<script> function fun2() { window.location="pet_insert.php"; } </script></br>
+  
+<input type="button" color="black" style="width:350px;height:35px;font:bold 25px Times New Roman;" value="VIEW PET DETAILS" onclick="fun3()"/></br>
+<script> function fun3() { window.location="pet_view.php"; } </script></br>
+
+  
+<input type="button" color="black" style="width:350px;height:35px;font:bold 25px Times New Roman;" value="DELETE PET" onclick="fun4()"/></br>
+<script> function fun4() { window.location="pet_delete.php"; } </script></br>
+
+  
+<input type="button" color="black" style="width:350px;height:35px;font:bold 25px Times New Roman;" value="VIEW VETERINARY HELP" onclick="fun5()"/></br>
+<script> function fun5() { window.location="vet_view.php"; } </script></br>
+
+ 
+</div>
+</body>
+</html>
